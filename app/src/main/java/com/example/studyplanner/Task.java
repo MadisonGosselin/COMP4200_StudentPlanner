@@ -16,7 +16,8 @@ public class Task {
     private String notes;
     private String status;
 
-    public Task(String title, String subject, String dueDate, String priority, String notes, String status) {
+    public Task(String title, String subject, String dueDate,
+                String priority, String notes, String status) {
         this.title = title;
         this.subject = subject;
         this.dueDate = dueDate;
@@ -32,6 +33,7 @@ public class Task {
     public void setId(int id) {
         this.id = id;
     }
+
 
     public String getTitle() {
         return title;
@@ -56,6 +58,7 @@ public class Task {
     public String getStatus() {
         return status;
     }
+
 
     public void setTitle(String title) {
         this.title = title;

@@ -28,7 +28,6 @@ public class LoginActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.loginButton);
         showPasswordButton = findViewById(R.id.showPasswordButton);
 
-        // 👁 Toggle password visibility
         showPasswordButton.setOnClickListener(v -> {
             if (isPasswordVisible) {
                 passwordInput.setTransformationMethod(PasswordTransformationMethod.getInstance());
@@ -40,7 +39,6 @@ public class LoginActivity extends AppCompatActivity {
             passwordInput.setSelection(passwordInput.getText().length());
         });
 
-        // Login validation
         loginButton.setOnClickListener(v -> {
             String email = emailInput.getText().toString().trim().toLowerCase();
             String password = passwordInput.getText().toString().trim();
@@ -49,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
                 emailInput.setError("Email is required");
                 emailInput.requestFocus();
             } else if (!isValidEmail(email)) {
-                emailInput.setError("Invalid Username!");
+                emailInput.setError("Invalid Email!");
                 emailInput.requestFocus();
             } else if (password.isEmpty()) {
                 passwordInput.setError("Password is required");
@@ -58,7 +56,10 @@ public class LoginActivity extends AppCompatActivity {
                 passwordInput.setError("Invalid Password!");
                 passwordInput.requestFocus();
             } else {
+                String username = email.substring(0, email.indexOf("@"));
+
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                intent.putExtra("username", username);
                 startActivity(intent);
                 finish();
             }
