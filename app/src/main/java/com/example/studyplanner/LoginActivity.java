@@ -47,13 +47,13 @@ public class LoginActivity extends AppCompatActivity {
                 emailInput.setError("Email is required");
                 emailInput.requestFocus();
             } else if (!isValidEmail(email)) {
-                emailInput.setError("Invalid Email!");
+                emailInput.setError("Email must be a valid hotmail, gmail, or student account.!");
                 emailInput.requestFocus();
             } else if (password.isEmpty()) {
                 passwordInput.setError("Password is required");
                 passwordInput.requestFocus();
             } else if (!isValidPassword(password)) {
-                passwordInput.setError("Invalid Password!");
+                passwordInput.setError("Demo password must be min 6 characters. With 1 uppercase letter, 1 special character, and 1 numeric.");
                 passwordInput.requestFocus();
             } else {
                 String username = email.substring(0, email.indexOf("@"));

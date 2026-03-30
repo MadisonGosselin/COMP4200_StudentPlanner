@@ -1,13 +1,54 @@
 <resources>
-    <string name="hello_world">Hello World!</string>
 
+    <!-- App -->
     <string name="app_name">StudyPlanner</string>
+
+    <!-- Login Screen -->
     <string name="welcome">WELCOME</string>
     <string name="to">TO</string>
     <string name="email">Email</string>
-    <string name="enter_your_email">Enter your email</string>
     <string name="password">Password</string>
-    <string name="enter_your_password">Enter your password</string>
-    <string name="show_password">Show Password</string>
+
+    <string name="demo_email">Demo Email</string>
+    <string name="demo_password">Demo Password</string>
+
     <string name="login">Login</string>
+    <string name="show_password">Show Password</string>
+
+    <!-- Login Errors -->
+    <string name="email_required">Email is required</string>
+    <string name="invalid_email">Email must be a valid hotmail, gmail, or student account.</string>
+    <string name="password_required">Password is required</string>
+    <string name="invalid_password">Demo password must be min 6 characters. With 1 uppercase letter, 1 special character, and 1 numeric.</string>
+
+    <!-- Home Screen -->
+    <string name="welcome_main">Welcome</string>
+    <string name="subtitle_main">Here is your study planner overview</string>
+
+    <string name="tasks_label">Tasks</string>
+    <string name="completed_label">Completed</string>
+    <string name="overdue_label">Overdue</string>
+
+    <string name="add_task">Add New Task</string>
+    <string name="upcoming_tasks">Upcoming Tasks</string>
+    <string name="no_tasks">No tasks available</string>
+
+    <!-- Task Item -->
+    <string name="due_prefix">Due:</string>
+    <string name="status_prefix">Status:</string>
+
+    <!-- Task Details -->
+    <string name="task_details">Task Details</string>
+    <string name="subject_prefix">Subject:</string>
+    <string name="due_date_prefix">Due Date:</string>
+    <string name="priority_prefix">Priority:</string>
+    <string name="notes_label">Notes:</string>
+
+    <!-- Buttons -->
+    <string name="mark_complete">Mark as Completed</string>
+    <string name="completed">Completed</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="home">Home</string>
+
 </resources>
